@@ -1,0 +1,7 @@
+pydantic-ai-slim[openai]
+python-dotenv
+pypdf
+beautifulsoup4
+tiktoken
+# Only used by make_attacks.py to draw the "scanned" quote image for Problem 7
+pillow

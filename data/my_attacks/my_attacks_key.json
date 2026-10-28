@@ -1,0 +1,20 @@
+[
+  {
+    "file": "a01_eastrock_scan_quote.pdf",
+    "vendor": "East Rock Ceramics",
+    "sku": "CC-MG-001",
+    "unit_price": 5.4,
+    "lead_time_days": 12,
+    "min_order": 1200,
+    "decision": "do_not_recommend"
+  },
+  {
+    "file": "a02_westville_email.eml",
+    "vendor": "Westville Bag Co",
+    "sku": "CC-BG-002",
+    "unit_price": 7.45,
+    "lead_time_days": 10,
+    "min_order": 300,
+    "decision": "do_not_recommend"
+  }
+]
