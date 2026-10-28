@@ -105,7 +105,11 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 >
 > Add your safety features to output/harness.md in a safety section and include what each defense layer does in the most simple and straightforward way possible.
 
-**Follow-up prompt:** None needed.
+**Follow-up prompt:**
+
+> Please pretend you are my TA. Regrade me. What do I need to do to get 100? … Yes.
+
+What was lacking after the first prompt: the human sign-off gate on `send_email` and `approve_payment` was wired in but had never fired, because gpt-6-luna would not call a trap tool. `gate_test.py` now forces the call and shows it is blocked, logged, and never executed.
 
 ---
 

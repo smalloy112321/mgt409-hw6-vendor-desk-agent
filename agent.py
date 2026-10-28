@@ -125,14 +125,16 @@ class RunOutcome:
         return self.messages
 
 
-def run(doc: Path, agent: Agent | None = None, setup: str = "default") -> RunOutcome:
+def run(doc: Path, agent: Agent | None = None, setup: str = "default", model_settings=None) -> RunOutcome:
+    """Review one document. model_settings is only for tests (gate_test.py forces a tool call)."""
     agent = agent or make_agent(defenses=ALL_DEFENSES)
     defenses = getattr(agent, "defenses", frozenset())
     deps = AgentDeps(doc_path=doc, defenses=defenses)
     usage = RunUsage()
     blocked: list[dict] = []
     start = time.perf_counter()
-    result = agent.run_sync(f"Review this vendor document: {doc}", deps=deps, usage=usage)
+    result = agent.run_sync(f"Review this vendor document: {doc}", deps=deps, usage=usage,
+                            model_settings=model_settings)
 
     # Design layer: any send_email / approve_payment request is logged and denied.
     # Nothing executes; a human would have to approve it outside this agent.

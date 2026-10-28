@@ -69,7 +69,7 @@ The program deletes anything a person looking at the document could not see. The
 
 ### 2. Design: build the agent so a trick can't do damage (`agent.py`, `rules.py`)
 Even if the AI is fooled, the setup limits what can happen.
-- **Email and payment need a person.** `send_email` and `approve_payment` stay in the system but require a human sign-off. If the AI asks for one, the request is logged to `trap_calls.json`, denied, and never runs.
+- **Email and payment need a person.** `send_email` and `approve_payment` stay in the system but require a human sign-off. If the AI asks for one, the request is logged to `trap_calls.json`, denied, and never runs. *Tested:* `gate_test.py` forces gpt-6-luna to call `approve_payment`. With no defenses the payment function runs. With defenses it is blocked, logged, and never runs, and the review still finishes correctly (`output/gate_test.json`).
 - **Code makes the decision, not the AI.** The AI only pulls out the facts. Python then applies the four handbook checks, using the approved list, the removed list, and the max costs read from the handbook.
 - **Code writes the reason,** so no link or text from the document can sneak into it. Links and email addresses are also scrubbed from warnings.
 - **The document is labeled as untrusted data** when it is handed to the AI. The reader can open only the one assigned file.

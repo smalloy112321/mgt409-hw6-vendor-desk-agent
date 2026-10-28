@@ -31,6 +31,7 @@ python agent.py --doc data/practice_docs/p01_bluehen_quote.html
 | 4 Cache test | `python cache_test.py` | `output/cache_test.json`, `.md` |
 | 5 Attack (no defenses) | `python attack_test.py` | `output/attack_results.json`, `.md` |
 | 6 Defenses, layer by layer | `python defense_test.py` | `output/defense_results.json`, `.md` |
+| 6 Sign-off gate test | `python gate_test.py` | `output/gate_test.json` |
 | 7 Red team | `python make_attacks.py` then `python red_team_test.py` | `data/my_attacks/`, `output/red_team.md` |
 | 8 Hardened check and exam | `python regression_test.py` then `python exam_run.py` | `output/exam_results.json` |
 | 9 Report | `python build_report.py` | `output/hw6_report.html` |
