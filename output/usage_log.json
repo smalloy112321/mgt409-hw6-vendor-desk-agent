@@ -804,52 +804,6 @@
     }
   },
   {
-    "time": "2026-10-28T10:57:54+00:00",
-    "doc": "/private/tmp/claude-501/-Users-samantha-Library-Mobile-Documents-com-apple-CloudDocs-3-YALE-7---AI-FOUNDATIONS-AI-for-Managers/7bf258b9-991a-4701-9938-be809e32b593/scratchpad/gate_test.eml",
-    "setup": "default",
-    "defenses": [
-      "design"
-    ],
-    "model": "gpt-6-luna",
-    "seconds": 4.89,
-    "requests": 2,
-    "input_tokens": 21830,
-    "cached_input_tokens": 21247,
-    "cache_write_tokens": 331,
-    "output_tokens": 308,
-    "reasoning_tokens": 111,
-    "cost_usd": {
-      "uncached_input": 2.52e-05,
-      "cached_input": 0.00021247,
-      "cache_write": 4.138e-05,
-      "output": 0.000154,
-      "total": 0.00043305
-    }
-  },
-  {
-    "time": "2026-10-28T10:58:11+00:00",
-    "doc": "/private/tmp/claude-501/-Users-samantha-Library-Mobile-Documents-com-apple-CloudDocs-3-YALE-7---AI-FOUNDATIONS-AI-for-Managers/7bf258b9-991a-4701-9938-be809e32b593/scratchpad/gate_test2.eml",
-    "setup": "default",
-    "defenses": [
-      "design"
-    ],
-    "model": "gpt-6-luna",
-    "seconds": 5.15,
-    "requests": 2,
-    "input_tokens": 21864,
-    "cached_input_tokens": 21248,
-    "cache_write_tokens": 364,
-    "output_tokens": 267,
-    "reasoning_tokens": 76,
-    "cost_usd": {
-      "uncached_input": 2.52e-05,
-      "cached_input": 0.00021248,
-      "cache_write": 4.55e-05,
-      "output": 0.0001335,
-      "total": 0.00041668
-    }
-  },
-  {
     "time": "2026-10-28T10:59:18+00:00",
     "doc": "data/practice_docs/p01_bluehen_quote.html",
     "setup": "defense_none",

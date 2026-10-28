@@ -4,7 +4,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 1 — Create the AI Prompt Log
+## Problem 1 — Vibe coder prompts
 
 **Typed prompt:**
 
@@ -17,7 +17,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 2 — Handbook Token Count and Cost
+## Problem 2 — Size up the handbook
 
 **Typed prompt:**
 
@@ -29,7 +29,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 3 — Build the Vendor Desk Agent
+## Problem 3 — Build the vendor desk agent
 
 **Typed prompt:**
 
@@ -45,7 +45,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 4 — Prompt Cache Test
+## Problem 4 — With and without cached tokens
 
 **Typed prompt:**
 
@@ -67,7 +67,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 5 — Attack the Agent
+## Problem 5 — Attack your own agent
 
 **Typed prompt:**
 
@@ -83,7 +83,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 6 — Defend the Agent
+## Problem 6 — Defend your agent
 
 **Typed prompt:**
 
@@ -109,7 +109,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 7 — Red Team: Our Own Attacks
+## Problem 7 — Red Team
 
 **Typed prompt:**
 
@@ -121,11 +121,11 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 >
 > We will get more points for attacks that are new and that actually fool the agent with no defenses on - let's try to get the maximum points we can on this problem.
 
-**Follow-up prompt:** "Not now" (in reply to the offer to harden the defenses right away; the hardening was done in Problem 8).
+**Follow-up prompt:** None needed. (When offered extra hardening right after this problem, I replied "Not now"; that hardening was done in Problem 8.)
 
 ---
 
-## Problem 8 — Harden Defenses and Run the Exam Documents
+## Problem 8 — Exam documents
 
 **Typed prompt:**
 
@@ -148,7 +148,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 9 — Report Page
+## Problem 9 — Results Page
 
 **Typed prompt:**
 
@@ -167,7 +167,7 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 
 ---
 
-## Problem 10 — Publish to GitHub
+## Problem 10 — Push to GitHub and submit the URL
 
 **Typed prompt:**
 
@@ -175,4 +175,8 @@ AI assistant: Claude Code. All agent AI calls use `gpt-6-luna` through Portkey.
 >
 > Include the whole data/ folder (the course data plus the two attack files) so graders can clone the repo and run the agent right away. Do not commit the real .env. Use .gitignore to keep it out and include .env.example with placeholders only. Put a short note in README.md on how to run the agent.
 
-**Follow-up prompt:** None needed.
+**Follow-up prompt:**
+
+> Thank you. Before I submit, I would like you to look at the assignment link and what I am turning in and have you pretend to be my TA and grade me. … Yes, fix and push.
+
+What was lacking after the first prompt: the repo was missing `output/handbook_estimate.md` (the Problem 2 deliverable on the expected file list). The prompt log also needed the official problem titles, and two non-gpt-6-luna model mentions had to be removed.

@@ -26,7 +26,7 @@ python agent.py --doc data/practice_docs/p01_bluehen_quote.html
 
 | Problem | Command | Output |
 |---|---|---|
-| 2 Handbook tokens and cost | `python count_tokens.py` | printed |
+| 2 Size up the handbook | `python count_tokens.py` | `output/handbook_estimate.md` |
 | 3 Agent on p01 and p08 | `python agent.py --doc data/practice_docs/p08_chapelst_email.eml --defenses none` | `output/harness.md` |
 | 4 Cache test | `python cache_test.py` | `output/cache_test.json`, `.md` |
 | 5 Attack (no defenses) | `python attack_test.py` | `output/attack_results.json`, `.md` |

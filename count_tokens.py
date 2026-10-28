@@ -1,7 +1,7 @@
 """Problem 2: count Handbook tokens and price it with gpt-6-luna rates.
 
 Two counts:
-  1. Local: tiktoken o200k_base (the GPT-4o/5-family tokenizer), no API call.
+  1. Local: tiktoken o200k_base encoding, no API call.
   2. API: send the Handbook to gpt-6-luna through Portkey and read the
      usage numbers the model reports. A second call with no Handbook gives
      the fixed message overhead, so Handbook tokens = with - without.
